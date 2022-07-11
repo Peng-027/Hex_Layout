@@ -1,0 +1,36 @@
+@import './reset.scss';
+.container{
+  width: 640px;
+  margin: 100px auto;
+}
+.wrap{
+  display: inline-block;
+  max-width: 424px;
+
+  .title {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  
+  .info {
+    display: inline-block;
+    max-width: 248px;
+    padding: 0 20px;
+    vertical-align: top;
+  }
+  
+}
+
+img {
+  padding-bottom: 24px;
+  vertical-align: middle;
+}
+
+.big-img {
+  margin: 0 -4px;
+  vertical-align: top;
+}
+
+footer{
+  height: 120px;
+}
