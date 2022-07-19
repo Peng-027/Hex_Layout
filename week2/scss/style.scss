@@ -195,7 +195,9 @@ footer{
       margin-bottom: 16px;
     }
   }
-  label{
+  a{
+    color: #fff;
+    text-decoration: none;
     @include title(24px, 36px);
   }
 }
