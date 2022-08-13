@@ -22,14 +22,32 @@ header{
   .nav{
     transition: all 0.3s ease-in;
     @include md{
-      // visibility: hidden;
-      display: none;
+      background-color: $primary;
+      width: 100%;
+      flex-wrap: wrap;
+      opacity: 0;
+      position: absolute;
+      left: 50%;
+      bottom: 250%;
+      transform: translate(-50%, 68%);
+      transition: all 0.6s ease-in;
     }
     &-item{
       margin: 25px 0 25px 64px;
+      @include md{
+        width: 50%;
+        border: 1px solid #fff;
+        margin: 0;
+        text-align: center;
+      }
       a{
         color: #fff;
         @include subtitle(20px, 30px);
+        @include md{
+          display: block;
+          padding: 16px 0;
+          @include subtitle(16px, 24px);
+        }
       }
     }
   }
@@ -43,33 +61,9 @@ header{
     }
   }
 }
-
 .mob-nav{
-  display: flex !important;
-  // visibility: visible;
-  background-color: $primary;
-  width: 100%;
-  flex-wrap: wrap;
-  position: absolute;
-  left: 50%;
-  bottom: 250%;
-  transform: translate(-50%, 68%);
-  transition: all 0.3s ease-in;
-
-  .nav-item{
-    width: 50%;
-    border: 1px solid #fff;
-    margin: 0;
-    text-align: center;
-  }
-  a{
-    display: block;
-    padding: 16px 0;
-    @include subtitle(16px, 24px);
-  }
-}
-.vis{
-  bottom: -50%;
+  bottom: -46% !important;
+  opacity: 1 !important;
 }
 
 footer {

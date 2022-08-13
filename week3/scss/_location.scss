@@ -2,30 +2,60 @@
     $all
 --------------*/
 .location{
-
-  &-container{
-    // margin: 0 -12px;
+  margin-bottom: 80px;
+  @include md{
+    margin-bottom: 64px;
   }
+
   &-title{
     @include title();
     @include title-2();
   }
+
+  &-select{
+    margin: 32px 0 40px 0;
+    column-gap: 16px;
+    align-items: center;
+    label{
+      @include title(24px, 36px);
+      @include sm{
+        @include title(16px, 24px);
+      }
+    }
+    select{
+      display: block;
+      padding: 6px 0 6px 12px;
+      width: 25%;
+      @include xl{
+        width: 35%;
+      }
+      @include lg{
+        width: 45%;
+      }
+      @include xs{
+        width: 70%;
+      }
+    }
+    option{
+      @include text(18px, 26px);
+    }
+  }
   
   &-group{
+    justify-content: center;
     flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 48px;
-    @include xl{
-      padding: 0 36px;
-      justify-content: center;
-    }
+    column-gap: 24px;
   }
   &-item{
     max-width: 416px;
-
-    img{
-      // max-width: 416px;
+    @include xl{
+      max-width: 337px;
     }
+    @include sm{
+      max-width: 348px;
+    }
+    
     h2{
       @include subtitle(24px, 36px);
       padding: 8px 0 8px 24px;
@@ -38,7 +68,6 @@
     border: 1px solid #00000020;
     li{
       display: flex;
-      // align-items: center;
       margin-bottom: 8px;
       &:last-child{
         margin-bottom: 0;
@@ -63,7 +92,6 @@
 /*--------------
     $branch
 --------------*/ 
-
 .branch{
   justify-content: space-between;
   @include xl{
@@ -110,8 +138,13 @@
   &-map{
     max-width: 100%;
     overflow: hidden;
+    margin-bottom: 80px;
     @include xl{
       margin-top: 24px;
+    }
+    @include md{
+      margin-bottom: 64px;
+      max-width: 348px;
     }
     
     iframe{

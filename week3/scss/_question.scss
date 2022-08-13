@@ -1,5 +1,9 @@
 .question{
   max-width: 856px;
+  margin-bottom: 80px;
+  @include md {
+    margin-bottom: 64px;
+  }
 
   &-title{
     @include title();
@@ -16,7 +20,7 @@
     }
     p{
       @include text(16px, 24px);
-      padding: 8px 0 32px;
+      margin: 8px 0 32px;
     }
   }
 }

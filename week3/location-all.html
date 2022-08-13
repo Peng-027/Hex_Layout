@@ -11,7 +11,15 @@
   
   <section class="location container">
     <h1 class="location-title">門市據點</h1>
-    <div>
+    <div class="location-select d-flex">
+      <label for="select">選擇地區</label>
+      <select name="select" id="select">
+        <option value="TP">台北市</option>
+        <option value="NT">新北市</option>
+        <option value="KA">高雄市</option>
+      </select>
+    </div>
+
       <div class="location-group d-flex">
         <div class="location-item">
           <img src="./image/store-1.png" alt="store-1">
@@ -94,7 +102,7 @@
           <a href="./branch.html" class="location-btn">詳細資訊</a>
         </div>
       </div>
-    </div>
+
   </section>
   
 </body>
