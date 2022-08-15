@@ -1,10 +1,10 @@
 .slider-bg{
   @include bgi;
   height: 787px;
-  background-image: url('../images/home-header.png');
+  background-image: url('../image/home-header.png');
 
   @include xl {
-    background-image: url('../images/home-header-sm.png');
+    background-image: url('../image/home-header-sm.png');
   }
 
   @include md{
@@ -152,16 +152,16 @@
 .crossover-bg{
   @include bgi;
   height: 608px;
-  background-image: url('../images/index-bg.png');
+  background-image: url('../image/index-bg.png');
 
   @include xxl{
     height: auto;
   }
   @include lg{
-    background-image: url("../images/index-bg-md.png");   
+    background-image: url("../image/index-bg-md.png");   
   }
   @include sm{
-    background-image: url("../images/index-bg-sm.png");
+    background-image: url("../image/index-bg-sm.png");
   }
 }
 
@@ -211,18 +211,18 @@
     }
   }
   .double{
-    background-image: url("../images/home-section4-1.png");
+    background-image: url("../image/home-section4-1.png");
     @include md{
-      background-image: url("../images/home-section4-1-sm.png");
+      background-image: url("../image/home-section4-1-sm.png");
     }
   }
   .youth{
-    background-image: url("../images/home-section4-2.png");
+    background-image: url("../image/home-section4-2.png");
     @include xl{
       margin-top: 24px;
     }
     @include md {
-      background-image: url("../images/home-section4-2-sm.png");
+      background-image: url("../image/home-section4-2-sm.png");
     }
   }
 }
