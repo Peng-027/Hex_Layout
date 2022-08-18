@@ -146,6 +146,7 @@ footer {
   }
 
   &-contact {
+    width: 100%;
     @include subtitle(36px, 54px);
     margin-top: 24px;
     @media (min-width: 768px) {
